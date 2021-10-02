@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import AccountCard from "../components/AccountCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import TransactDialog from "../components/TransactDialog";
+import TransactionDialog from "../components/TransactionDialog";
 import AddAccountDialog from "../components/AddAccountDialog";
 
 export default function Home() {
@@ -56,7 +56,7 @@ export default function Home() {
           />
         ) : null}
         {showTransactModal ? (
-          <TransactDialog
+          <TransactionDialog
             closeModal={() => setShowTransactModal((pV) => !pV)}
           />
         ) : null}
